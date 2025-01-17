@@ -9,10 +9,10 @@ import {
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
+//import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
+//import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
+//import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
@@ -44,19 +44,19 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'David Linhardt',
+  description: "my CV",
 };
 
 /**
  * Section definition
  */
 export const SectionId = {
-  Hero: 'hero',
-  About: 'about',
-  Contact: 'contact',
+  Hero: 'ich',
+  About: 'über mich',
+  Contact: 'kontakt',
   Portfolio: 'portfolio',
-  Resume: 'resume',
+  Resume: 'CV',
   Skills: 'skills',
   Stats: 'stats',
   Testimonials: 'testimonials',
@@ -66,34 +66,34 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
 
 /**
  * Hero section
+ * bold: <strong className="text-stone-100">
+ * TODO: resume.pdf
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `Ich bin David Linhardt.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        Ich bin Informatikstudent an der
+        <strong className="text-stone-100"> Technischen Hochschule Ingolstadt </strong>
+        und betreibe nebenbei ein kleines Webentwicklungsunternehmen.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        Ich habe viel Erfahrung in der TypeScript Webentwicklung mit React und modernen DevOps Praktiken.
       </p>
     </>
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
-      text: 'Resume',
+      href: '/CV.pdf',
+      text: 'CV',
       primary: true,
       Icon: ArrowDownTrayIcon,
     },
     {
       href: `#${SectionId.Contact}`,
-      text: 'Contact',
+      text: 'Kontakt',
       primary: false,
     },
   ],
@@ -104,16 +104,16 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `Ich habe einen großen Erfahrungsschatz in der Full-Stack Webentwicklung insbesondere mit Angular, React und Node.js. 
+  In meinem Studium durfte ich alle möglichen Technologien und Programmiersprachen kennenlernen. Auch wenn ich am meisten Erfahrung 
+  in der Webentwicklung habe, bin ich durchaus in der Lage mich in neue Konzepte und Sprachen schnell einzuarbeiten.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Wohnort', text: 'Ingolstadt, Bayern', Icon: MapIcon},
+    {label: 'Alter', text: '23', Icon: CalendarIcon},
+    {label: 'Nationalität', text: 'Deutsch', Icon: FlagIcon},
+    {label: 'Interessen', text: 'Autos, Fitness', Icon: SparklesIcon},
+    {label: 'Studium', text: 'Technische Hochschule Ingolstadt', Icon: AcademicCapIcon},
+    {label: 'Firma', text: 'WebPulse Development', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -122,19 +122,15 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'Gesprochene Sprachen',
     skills: [
       {
-        name: 'English',
+        name: 'Deutsch (C2)',
         level: 10,
       },
       {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
+        name: 'English (C1)',
+        level: 9,
       },
     ],
   },
@@ -143,14 +139,10 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'React',
-        level: 9,
+        level: 10,
       },
       {
-        name: 'Typescript',
-        level: 7,
-      },
-      {
-        name: 'GraphQL',
+        name: 'Angular 2+',
         level: 6,
       },
     ],
@@ -160,32 +152,121 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'Node.js',
+        level: 9,
+      },
+      {
+        name: 'Next.js',
         level: 8,
       },
       {
-        name: 'Rust',
+        name: 'Java',
+        level: 7,
+      },
+      {
+        name: 'Electron.js',
+        level: 5,
+      },
+    ],
+  },
+  {
+    name: 'DevOps Praktiken',
+    skills: [
+      {
+        name: 'Projektkonfiguration',
+        level: 9,
+      },
+      {
+        name: 'GitHub Actions',
+        level: 6,
+      },
+      {
+        name: 'JUnit 5',
+        level: 6,
+      },
+      {
+        name: 'Jest',
         level: 5,
       },
       {
-        name: 'Golang',
+        name: 'Docker',
         level: 4,
       },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Sprachen',
     skills: [
       {
-        name: 'React Native',
+        name: 'TypeScript',
         level: 9,
       },
       {
-        name: 'Flutter',
+        name: 'JavaScript',
+        level: 9,
+      },
+      {
+        name: 'HTML5',
+        level: 9,
+      },
+      {
+        name: 'CSS',
+        level: 8,
+      },
+      {
+        name: 'Java',
+        level: 7,
+      },
+      {
+        name: 'SQL',
+        level: 6,
+      },
+      {
+        name: 'C',
+        level: 5,
+      },
+      {
+        name: 'MATLAB',
+        level: 5,
+      },
+      {
+        name: 'bash/zsh',
         level: 4,
       },
       {
-        name: 'Swift',
+        name: 'Haskell',
+        level: 4,
+      },
+      {
+        name: 'Kotlin',
         level: 3,
+      },
+      {
+        name: 'PHP',
+        level: 3,
+      },
+      {
+        name: 'Python',
+        level: 3,
+      },
+      {
+        name: 'CPLEX',
+        level: 3,
+      },
+      {
+        name: 'Powershell',
+        level: 3,
+      },
+      {
+        name: 'Prolog',
+        level: 2,
+      },
+      {
+        name: 'Intel x86 Assembly',
+        level: 1,
+      },
+      {
+        name: 'R',
+        level: 1,
       },
     ],
   },
@@ -193,114 +274,75 @@ export const skills: SkillGroup[] = [
 
 /**
  * Portfolio section
+ * TODO
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage1,
-  },
-  {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage2,
-  },
-  {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Coding Challenge Plattform für amplimind',
+    description: `Erstellung einer Coding Challenge Plattform für amplimind mit React und Kotlin. `,
+    url: 'https://github.com/amplimindcc',
     image: porfolioImage3,
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage4,
-  },
-  {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage5,
-  },
-  {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage6,
-  },
-  {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage11,
+    title: 'Buisness-Intelligence-Tool',
+    description: `Standalone Tool zur Generierung und visuellen Aufbereitung betriebswirtschaftlicher Kennzahlen aus CSV Dateien 
+    (Kassensystem und Inventursystem) für einen Nachtclub. `,
+    url: 'https://github.com/WebStackWizards',
+    image: porfolioImage2,
   },
 ];
 
 /**
- * Resume section -- TODO: Standardize resume contact format or offer MDX
+ * Resume section 
+ * TODO content thi
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'Oktober 2021 - Present',
+    location: 'Technische Hochschule Ingolstadt',
+    title: 'B. Sc. Informatik',
+    content: <p>In meinem Informatikstudium durfte ich die Grundlagen der Informatik erlernen. Darunter: C, Rechnerarchitektur, 
+      Mathematische Grundlagen 1&2, Physikalische und Elektrotechnische Grundlagen, Java, Betriebssysteme, Rechnernetze, 
+      Algorithmen und Datenstrukturen, Software Engineering, Webtechnologien, Verteilte Systeme, Wissensbasierte Systeme, 
+      Datenbanksysteme, Patterns in der Objektorientierten Programmierung, Grundlagen der Theoretischen Informatik,
+      Diskrete Mathematik, Computergraphik, Projektmanagement, Funktionale Programmierung mit Haskell, Statistik und Kombinatorik,
+      IT-Recht, Grundlagen der BWL, Fortgeschrittene Java Programmierung und Advanced Webtechnologies.
+    </p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'September 2020 - Juli 2021',
+    location: 'Technische Universität München',
+    title: 'B. Sc. Bauingenieurwesen (ohne Abschluss)',
+    content: <p>In meinem Bauingenieursstudium habe ich im Modul Bauinformatik mein Talent fürs Programmieren entdeckt.</p>,
+  },
+  {
+    date: 'August 2012 - Juli 2020',
+    location: 'Apian Gymnasium Ingolstadt',
+    title: 'Abitur',
+    content: <p>Allgemeines Abitur mit Note 2,0</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'September 2023 - Januar 2024',
+    location: 'BMW AG',
+    title: 'Studentischer Praktikant',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Arbeit an Kamäleon, einem internen Tool für das Kapazitätsmanagement. Full-Stack Entwicklung mit Angular 13 und Payara 5 in der Azure Cloud 
+        sowie Migration der CI/CD-Pipeline von Jenkins auf GitHub Actions in einem multinationalen Entwicklerteam.
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'Mai 2021 - Present',
+    location: 'WebPulse Development',
+    title: 'Unternehmensinhaber',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        WebPulse Development (ehemals SythIT / Burger Steven, Linhardt David GbR) ist ein kleines Webentwicklungsunternehmen, das von mir mit einem Kommilitonen nebenbei betrieben wird.
+        Wir bieten Webentwicklungsdienstleistungen für kleine und mittelständische Unternehmen an und sammeln so wertvolle Praxiserfahrung.
       </p>
     ),
   },
@@ -313,19 +355,14 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      name: 'Vitalij Bojatschkin',
+      text: 'Das Ergebnis übersteigt das, was ich von einem studentischen Projekt erwartet hätte.',
+      image: '',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
-    },
-    {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+      name: 'Prof. Dr. Franz Regensburger',
+      text: 'Haben Sie nicht diesen genialen Vortrag über das Decorator Pattern gehalten?.',
+      image: '',
     },
   ],
 };
@@ -335,28 +372,23 @@ export const testimonial: TestimonialSection = {
  */
 
 export const contact: ContactSection = {
-  headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  headerText: 'Kontaktieren Sie mich!',
+  description: 'Ich bin am besten per E-Mail erreichbar und antworte dort in der Regel am schnellsten.',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'linhardt.david@protonmail.com',
+      href: 'mailto:linhardt.david@protonmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: 'Ingolstadt, Bayern',
+      href: 'https://maps.app.goo.gl/iQTSf9aRpYCrYdJYA',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'MysterionAutotronic',
+      href: 'https://github.com/MysterionAutotronic',
     },
   ],
 };
@@ -365,9 +397,6 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/MysterionAutotronic'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/david-linhardt/'},
 ];
