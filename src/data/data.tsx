@@ -115,9 +115,10 @@ const Age: number = calculateAge(new Date(bDay));
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Ich habe einen großen Erfahrungsschatz in der Full-Stack Webentwicklung insbesondere mit Angular, React und Node.js. 
-  In meinem Studium durfte ich alle möglichen Technologien und Programmiersprachen kennenlernen. Auch wenn ich am meisten Erfahrung 
-  in der Webentwicklung habe, bin ich durchaus in der Lage mich in neue Konzepte und Sprachen schnell einzuarbeiten.`,
+  description: `Ich verfüge über einen umfangreichen Erfahrungsschatz in der Full-Stack-Webentwicklung, insbesondere mit Angular, 
+  React und Node.js. Während meines Studiums konnte ich eine Vielzahl an Technologien und Programmiersprachen kennenlernen. 
+  Obwohl mein Schwerpunkt in der Webentwicklung liegt, zeichne ich mich durch die Fähigkeit aus, mich schnell und effizient in 
+  neue Konzepte und Programmiersprachen einzuarbeiten.`,
   aboutItems: [
     {label: 'Wohnort', text: 'Ingolstadt, Bayern', Icon: MapIcon},
     {label: 'Alter', text: Age.toString(), Icon: CalendarIcon},
@@ -312,19 +313,23 @@ export const education: TimelineItem[] = [
     date: 'Oktober 2021 - Present',
     location: 'Technische Hochschule Ingolstadt',
     title: 'B. Sc. Informatik',
-    content: <p>In meinem Informatikstudium durfte ich die Grundlagen der Informatik erlernen. Darunter: C, Rechnerarchitektur, 
-      Mathematische Grundlagen 1&2, Physikalische und Elektrotechnische Grundlagen, Java, Betriebssysteme, Rechnernetze, 
-      Algorithmen und Datenstrukturen, Software Engineering, Webtechnologien, Verteilte Systeme, Wissensbasierte Systeme, 
-      Datenbanksysteme, Patterns in der Objektorientierten Programmierung, Grundlagen der Theoretischen Informatik,
-      Diskrete Mathematik, Computergraphik, Projektmanagement, Funktionale Programmierung mit Haskell, Statistik und Kombinatorik,
-      IT-Recht, Grundlagen der BWL, Fortgeschrittene Java Programmierung und Advanced Webtechnologies.
+    content: <p>
+      Im Rahmen meines Informatikstudiums konnte ich fundierte Grundlagen der Informatik erlernen und dabei ein breites Spektrum an Themen 
+      abdecken. Dazu zählen unter anderem C, Rechnerarchitektur, mathematische Grundlagen, physikalische und elektrotechnische Grundlagen, 
+      Java, Betriebssysteme, Rechnernetze, Algorithmen und Datenstrukturen, Software Engineering, Webtechnologien, verteilte Systeme, 
+      wissensbasierte Systeme, Datenbanksysteme, Design Patterns in der objektorientierten Programmierung, theoretische Informatik, diskrete 
+      Mathematik, Computergraphik, Projektmanagement, funktionale Programmierung mit Haskell, Statistik, Kombinatorik, IT-Recht, 
+      betriebswirtschaftliche Grundlagen sowie fortgeschrittene Java-Programmierung und fortgeschrittene Webtechnologien.
     </p>,
   },
   {
     date: 'September 2020 - Juli 2021',
     location: 'Technische Universität München',
     title: 'B. Sc. Bauingenieurwesen (ohne Abschluss)',
-    content: <p>In meinem Bauingenieursstudium habe ich im Modul Bauinformatik mein Talent fürs Programmieren entdeckt.</p>,
+    content: <p>
+      Während meines Bauingenieurstudiums habe ich im Modul Bauinformatik meine Leidenschaft und mein Talent für das 
+      Programmieren entdeckt.
+    </p>,
   },
   {
     date: 'August 2012 - Juli 2020',
@@ -341,8 +346,9 @@ export const experience: TimelineItem[] = [
     title: 'Studentischer Praktikant',
     content: (
       <p>
-        Arbeit an Kamäleon, einem internen Tool für das Kapazitätsmanagement. Full-Stack Entwicklung mit Angular 13 und Payara 5 in der Azure Cloud 
-        sowie Migration der CI/CD-Pipeline von Jenkins auf GitHub Actions in einem multinationalen Entwicklerteam.
+        Entwicklung und Optimierung von 'Kamäleon', einem internen Tool für das Kapazitätsmanagement. Full-Stack-Entwicklung mit Angular 13 
+        und Payara 5 in der Azure Cloud sowie Migration der CI/CD-Pipeline von Jenkins zu GitHub Actions. Zusammenarbeit in einem 
+        multinationalen Entwicklerteam für eine effiziente und zukunftsorientierte Softwarelösung.
       </p>
     ),
   },
@@ -352,8 +358,10 @@ export const experience: TimelineItem[] = [
     title: 'Unternehmensinhaber',
     content: (
       <p>
-        WebPulse Development (ehemals SythIT / Burger Steven, Linhardt David GbR) ist ein kleines Webentwicklungsunternehmen, das von mir mit einem Kommilitonen nebenbei betrieben wird.
-        Wir bieten Webentwicklungsdienstleistungen für kleine und mittelständische Unternehmen an und sammeln so wertvolle Praxiserfahrung.
+        WebPulse Development (Burger Steven, Linhardt David GbR, ehemals SythIT) ist ein von mir und einem Kommilitonen gegründetes 
+        Webentwicklungsunternehmen, das wir neben dem Studium betreiben. Wir spezialisieren uns auf die Bereitstellung von 
+        Webentwicklungsdienstleistungen für kleine und mittelständische Unternehmen und nutzen diese Gelegenheit, um wertvolle Praxiserfahrung 
+        in der realen Projektarbeit zu sammeln.
       </p>
     ),
   },
