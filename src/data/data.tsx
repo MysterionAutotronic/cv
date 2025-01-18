@@ -99,6 +99,17 @@ export const heroData: Hero = {
   ],
 };
 
+const bDay: string = '2002-01-10';
+function calculateAge(birthDate: Date): number {
+  const now = new Date();
+  let age = now.getFullYear() - birthDate.getFullYear();
+  if (now.getMonth() < birthDate.getMonth() || (now.getMonth() === birthDate.getMonth() && now.getDate() < birthDate.getDate())) {
+    age--;
+  }
+  return age;
+}
+const Age: number = calculateAge(new Date(bDay));
+
 /**
  * About section
  */
@@ -109,7 +120,7 @@ export const aboutData: About = {
   in der Webentwicklung habe, bin ich durchaus in der Lage mich in neue Konzepte und Sprachen schnell einzuarbeiten.`,
   aboutItems: [
     {label: 'Wohnort', text: 'Ingolstadt, Bayern', Icon: MapIcon},
-    {label: 'Alter', text: '23', Icon: CalendarIcon},
+    {label: 'Alter', text: Age.toString(), Icon: CalendarIcon},
     {label: 'Nationalität', text: 'Deutsch', Icon: FlagIcon},
     {label: 'Interessen', text: 'Autos, Fitness', Icon: SparklesIcon},
     {label: 'Studium', text: 'Technische Hochschule Ingolstadt', Icon: AcademicCapIcon},
