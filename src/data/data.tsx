@@ -298,7 +298,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Buisness-Intelligence-Tool',
     description: `Standalone Tool zur Generierung und visuellen Aufbereitung betriebswirtschaftlicher Kennzahlen aus CSV Dateien 
-    (Kassensystem und Inventursystem) für einen Nachtclub. `,
+    (Kassensystem und Inventursystem) für einen Gastronomiebetrieb. `,
     url: 'https://github.com/WebStackWizards',
     image: porfolioImage2,
   },
