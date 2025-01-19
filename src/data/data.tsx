@@ -123,7 +123,7 @@ export const aboutData: About = {
     {label: 'Wohnort', text: 'Ingolstadt, Bayern', Icon: MapIcon},
     {label: 'Alter', text: Age.toString(), Icon: CalendarIcon},
     {label: 'Nationalität', text: 'Deutsch', Icon: FlagIcon},
-    {label: 'Interessen', text: 'Autos, Fitness', Icon: SparklesIcon},
+    {label: 'Interessen', text: 'Autos, Kraftsport', Icon: SparklesIcon},
     {label: 'Studium', text: 'Technische Hochschule Ingolstadt', Icon: AcademicCapIcon},
     {label: 'Firma', text: 'WebPulse Development', Icon: BuildingOffice2Icon},
   ],
