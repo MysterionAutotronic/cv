@@ -17,7 +17,7 @@ import heroImage from '../images/header-background.webp';
 //import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-//import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
+import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
 //import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 //import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
 //import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
@@ -66,8 +66,6 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
 
 /**
  * Hero section
- * bold: <strong className="text-stone-100">
- * TODO: resume.pdf
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
@@ -286,7 +284,6 @@ export const skills: SkillGroup[] = [
 
 /**
  * Portfolio section
- * TODO
  */
 export const portfolioItems: PortfolioItem[] = [
   {
@@ -296,9 +293,17 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage3,
   },
   {
+    title: 'BMW Kamäleon',
+    description: `Mitarbeit an der Entwicklung und Optimierung von 'Kamäleon', einem internen Tool für das Kapazitätsmanagement
+    bei BMW. Full-Stack-Entwicklung mit Angular 13 und Payara 5 in der Azure Cloud, Migration der CI/CD-Pipeline von Jenkins zu GitHub Actions 
+    und Integration von ESLint, EditorConfig und Prettier.`,
+    url: 'https://kamaeleon.bmw.com/',
+    image: porfolioImage4,
+  },
+  {
     title: 'Buisness-Intelligence-Tool',
     description: `Standalone Tool zur Generierung und visuellen Aufbereitung betriebswirtschaftlicher Kennzahlen aus CSV Dateien 
-    (Kassensystem und Inventursystem) für einen Nachtclub. `,
+    (Kassensystem und Inventursystem) für einen Gastronomiebetrieb. `,
     url: 'https://github.com/WebStackWizards',
     image: porfolioImage2,
   },
@@ -306,7 +311,6 @@ export const portfolioItems: PortfolioItem[] = [
 
 /**
  * Resume section 
- * TODO content thi
  */
 export const education: TimelineItem[] = [
   {

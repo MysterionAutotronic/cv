@@ -40,7 +40,7 @@ export default Portfolio;
 
 const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, description}}) => {
   const [mobile, setMobile] = useState(false);
-  const [showOverlay, setShowOverlay] = useState(false);
+  const [showOverlay, setShowOverlay] = useState(true);
   const linkRef = useRef<HTMLAnchorElement>(null);
 
   useEffect(() => {
@@ -55,7 +55,7 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, descrip
     (event: MouseEvent<HTMLElement>) => {
       if (mobile && !showOverlay) {
         event.preventDefault();
-        setShowOverlay(!showOverlay);
+        //setShowOverlay(!showOverlay);
       }
     },
     [mobile, showOverlay],
