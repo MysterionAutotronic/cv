@@ -345,6 +345,16 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
+    date: 'März 2025 - Present',
+    location: 'DATEV eG',
+    title: 'Werkstudent Softwareentwicklung',
+    content: (
+      <p>
+        Full-Stack Entwicklung im Bereich Jahresabschluss mit TypeScript Angular und Java Springboot (Cloud Native).
+      </p>
+    ),
+  },
+  {
     date: 'September 2023 - Januar 2024',
     location: 'BMW AG',
     title: 'Studentischer Praktikant',
