@@ -186,7 +186,7 @@ export const skills: SkillGroup[] = [
         level: 9,
       },
       {
-        name: 'KCP (Kubernetes Control Plane',
+        name: 'KCP (Kubernetes Control Plane)',
         level: 8,
       },
       {
