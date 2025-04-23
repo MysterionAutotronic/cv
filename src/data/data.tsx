@@ -123,7 +123,7 @@ export const aboutData: About = {
     {label: 'Nationalität', text: 'Deutsch', Icon: FlagIcon},
     {label: 'Interessen', text: 'Autos, Kraftsport', Icon: SparklesIcon},
     {label: 'Studium', text: 'Technische Hochschule Ingolstadt', Icon: AcademicCapIcon},
-    {label: 'Firma', text: 'WebPulse Development', Icon: BuildingOffice2Icon},
+    {label: 'Firma', text: 'DATEV eG', Icon: BuildingOffice2Icon},
   ],
 };
 
