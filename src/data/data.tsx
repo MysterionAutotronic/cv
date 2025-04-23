@@ -14,17 +14,17 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 //import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 //import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
-//import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-//import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-//import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-//import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-//import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-//import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-//import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-//import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+// import portfolioImage1 from '../images/portfolio/portfolio-1.jpg';
+import portfolioImage2 from '../images/portfolio/portfolio-2.jpg';
+import portfolioImage3 from '../images/portfolio/portfolio-3.jpg';
+import portfolioImage4 from '../images/portfolio/portfolio-4.jpg';
+// import portfolioImage5 from '../images/portfolio/portfolio-5.jpg';
+// import portfolioImage6 from '../images/portfolio/portfolio-6.jpg';
+import portfolioImage7 from '../images/portfolio/portfolio-7.jpg';
+// import portfolioImage8 from '../images/portfolio/portfolio-8.jpg';
+// import portfolioImage9 from '../images/portfolio/portfolio-9.jpg';
+// import portfolioImage10 from '../images/portfolio/portfolio-10.jpg';
+// import portfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -186,16 +186,16 @@ export const skills: SkillGroup[] = [
         level: 9,
       },
       {
+        name: 'KCP (Kubernetes Control Plane',
+        level: 8,
+      },
+      {
+        name: 'Kubernetes',
+        level: 7,
+      },
+      {
         name: 'GitHub Actions',
         level: 6,
-      },
-      {
-        name: 'JUnit 5',
-        level: 6,
-      },
-      {
-        name: 'Jest',
-        level: 5,
       },
       {
         name: 'Docker',
@@ -280,6 +280,35 @@ export const skills: SkillGroup[] = [
       },
     ],
   },
+  {
+    name: 'Testing',
+    skills: [
+      {
+        name: 'JUnit 5',
+        level: 6,
+      },
+      {
+        name: 'Jest',
+        level: 5,
+      },
+      {
+        name: 'MSW',
+        level: 5,
+      },
+      {
+        name: 'Playwright',
+        level: 8,
+      },
+      {
+        name: 'Cypress',
+        level: 4,
+      },
+      {
+        name: 'Pact',
+        level: 3,
+      },
+    ]
+  }
 ];
 
 /**
@@ -288,9 +317,9 @@ export const skills: SkillGroup[] = [
 export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Coding Challenge Plattform für amplimind',
-    description: `Erstellung einer Coding Challenge Plattform für amplimind mit React und Kotlin. `,
+    description: `Erstellung einer Coding Challenge Plattform für amplimind mit React und Kotlin Springboot. `,
     url: 'https://github.com/amplimindcc',
-    image: porfolioImage3,
+    image: portfolioImage3,
   },
   {
     title: 'BMW Kamäleon',
@@ -298,15 +327,22 @@ export const portfolioItems: PortfolioItem[] = [
     bei BMW. Full-Stack-Entwicklung mit Angular 13 und Payara 5 in der Azure Cloud, Migration der CI/CD-Pipeline von Jenkins zu GitHub Actions 
     und Integration von ESLint, EditorConfig und Prettier.`,
     url: 'https://kamaeleon.bmw.com/',
-    image: porfolioImage4,
+    image: portfolioImage4,
   },
   {
-    title: 'Buisness-Intelligence-Tool',
+    title: 'Business-Intelligence-Tool',
     description: `Standalone Tool zur Generierung und visuellen Aufbereitung betriebswirtschaftlicher Kennzahlen aus CSV Dateien 
     (Kassensystem und Inventursystem) für einen Gastronomiebetrieb. `,
     url: 'https://github.com/WebStackWizards',
-    image: porfolioImage2,
+    image: portfolioImage2,
   },
+  {
+    title: 'DATEV Anlag',
+    description: `Arbeit an einem Tool zur Anlagenbuchführung. Full-Stack Entwicklung mit Angular 17 und Springboot
+    mit Fokus auf Pact, Jest und Playwright Tests.`,
+    url: '#portfolio',
+    image: portfolioImage7,
+  }
 ];
 
 /**
@@ -350,7 +386,9 @@ export const experience: TimelineItem[] = [
     title: 'Werkstudent Softwareentwicklung',
     content: (
       <p>
-        Full-Stack Entwicklung im Bereich Jahresabschluss mit TypeScript Angular und Java Springboot (Cloud Native).
+        Werkstudent als Fullstack-Entwickler mit Fokus auf Frontend-Testing: Verantwortlich für Konzeption, Umsetzung und Wartung einer
+        skalierbaren Testarchitektur (Pact, Playwright, Unit-Tests) zur Sicherstellung der Softwarequalität in einem modernen Cloud-Native
+        CI/CD-Umfeld.
       </p>
     ),
   },
@@ -367,14 +405,14 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'Mai 2021 - Present',
+    date: 'Mai 2021 - April 2025',
     location: 'WebPulse Development',
     title: 'Unternehmensinhaber',
     content: (
       <p>
         WebPulse Development (Burger Steven, Linhardt David GbR, ehemals SythIT) ist ein von mir und einem Kommilitonen gegründetes 
-        Webentwicklungsunternehmen, das wir neben dem Studium betreiben. Wir spezialisieren uns auf die Bereitstellung von 
-        Webentwicklungsdienstleistungen für kleine und mittelständische Unternehmen und nutzen diese Gelegenheit, um wertvolle Praxiserfahrung 
+        Webentwicklungsunternehmen, das wir neben dem Studium betrieben. Wir spezialisierten uns auf die Bereitstellung von 
+        Webentwicklungsdienstleistungen für kleine und mittelständische Unternehmen und nutzten diese Gelegenheit, um wertvolle Praxiserfahrung 
         in der realen Projektarbeit zu sammeln.
       </p>
     ),
