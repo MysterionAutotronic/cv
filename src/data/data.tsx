@@ -360,6 +360,8 @@ export const education: TimelineItem[] = [
       wissensbasierte Systeme, Datenbanksysteme, Design Patterns in der objektorientierten Programmierung, theoretische Informatik, diskrete 
       Mathematik, Computergraphik, Projektmanagement, funktionale Programmierung mit Haskell, Statistik, Kombinatorik, IT-Recht, 
       betriebswirtschaftliche Grundlagen sowie fortgeschrittene Java-Programmierung und fortgeschrittene Webtechnologien.
+      Meine Bachelorarbeit verfasse ich aktuell über das Thema: <i>Conception, Implementation, and Evaluation of a Highly Scalable and Highly
+      Available Kubernetes-Based SaaS Platform on Kubernetes Control Plane (KCP)</i>
     </p>,
   },
   {
