@@ -73,12 +73,15 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Ich bin Informatikstudent an der
+        Ich studiere Cloud Applications und Security Engineering im Master an der
         <strong className="text-stone-100"> Technischen Hochschule Ingolstadt </strong>
-        und betreibe nebenbei ein kleines Webentwicklungsunternehmen.
+        und arbeite nebenher als Werkstudent bei <strong className="text-stone-100">DATEV</strong>.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Ich habe viel Erfahrung in der TypeScript Webentwicklung mit React und modernen DevOps Praktiken.
+        Ich verfüge über breite Full-Stack- und DevOps-Erfahrung:
+        moderne Web- und App-Entwicklung, skalierbare Backends sowie Entwicklung von Container- und 
+        Kubernetes-Umgebungen.
+        Ergänzend bringe ich fundiertes Know-how in Testarchitektur, Auth und Monitoring mit.
       </p>
     </>
   ),
@@ -113,10 +116,21 @@ const Age: number = calculateAge(new Date(bDay));
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Ich verfüge über einen umfangreichen Erfahrungsschatz in der Full-Stack-Webentwicklung, insbesondere mit Angular, 
-  React und Node.js. Während meines Studiums konnte ich eine Vielzahl an Technologien und Programmiersprachen kennenlernen. 
-  Obwohl mein Schwerpunkt in der Webentwicklung liegt, zeichne ich mich durch die Fähigkeit aus, mich schnell und effizient in 
-  neue Konzepte und Programmiersprachen einzuarbeiten.`,
+  description: `
+    Ich bin Masterstudent im Bereich Cloud Applications und Security Engineering und
+    verbinde tiefgehende praktische Erfahrung in Full-Stack Entwicklung mit moderner
+    Cloud- und DevOps-Expertise.
+    Durch meine Bachelorarbeit zu einem modernen Multi-Tenancy Ansatz zu hochskalierbaren
+    Kubernetes-Architekturen, anspruchsvolle Enterprise-Projekte bei BMW und DATEV sowie
+    eigenverantwortliche Arbeitsbereiche konnte ich weit über das typische Niveau von
+    Absolventen hinausgehen.
+    In meiner Selbstständigkeit habe ich vollständige Projekte ohne die Unterstützung von
+    Senior-Entwicklern realisiert – von der Konzeption bis zur produktiven Umsetzung – und
+    dadurch die Fähigkeit geschärft, auch unter hohem Druck verlässliche und innovative Lösungen
+    zu liefern.
+    Aktuell erweitere ich mein Profil gezielt im Bereich Cybersecurity, um meine technische
+    Breite durch zertifizierte Tiefe zu ergänzen.
+  `,
   aboutItems: [
     {label: 'Wohnort', text: 'Ingolstadt, Bayern', Icon: MapIcon},
     {label: 'Alter', text: Age.toString(), Icon: CalendarIcon},
@@ -350,18 +364,26 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'Oktober 2021 - Present',
+    date: 'Oktober 2025 - Present',
+    location: 'Technische Hochschule Ingolstadt',
+    title: 'M. Sc. Cloud Applications und Security Engineering',
+    content: <p>
+      Im Masterstudium vertiefe ich meine Kenntnisse in Cloud-Architekturen, DevOps und
+      IT-Security und verknüpfe diese mit aktueller Forschung und Praxis.
+    </p>,
+  },
+  {
+    date: 'Oktober 2021 - September 2025',
     location: 'Technische Hochschule Ingolstadt',
     title: 'B. Sc. Informatik',
     content: <p>
-      Im Rahmen meines Informatikstudiums konnte ich fundierte Grundlagen der Informatik erlernen und dabei ein breites Spektrum an Themen 
-      abdecken. Dazu zählen unter anderem C, Rechnerarchitektur, mathematische Grundlagen, physikalische und elektrotechnische Grundlagen, 
-      Java, Betriebssysteme, Rechnernetze, Algorithmen und Datenstrukturen, Software Engineering, Webtechnologien, verteilte Systeme, 
-      wissensbasierte Systeme, Datenbanksysteme, Design Patterns in der objektorientierten Programmierung, theoretische Informatik, diskrete 
-      Mathematik, Computergraphik, Projektmanagement, funktionale Programmierung mit Haskell, Statistik, Kombinatorik, IT-Recht, 
-      betriebswirtschaftliche Grundlagen sowie fortgeschrittene Java-Programmierung und fortgeschrittene Webtechnologien.
-      Meine Bachelorarbeit verfasse ich aktuell über das Thema: <i>Conception, Implementation, and Evaluation of a Highly Scalable and Highly
-      Available Kubernetes-Based SaaS Platform on Kubernetes Control Plane (KCP)</i>
+      Mein Bachelorstudium in Informatik (Abschlussnote 2,0) vermittelte mir fundierte Kenntnisse
+      in Softwareentwicklung, Algorithmen, Systemarchitekturen und IT-Management.
+      Den Schwerpunkt legte ich auf moderne Web- und Cloud-Technologien, die ich in Projekten und
+      Praktika praxisnah vertiefen konnte.
+      Meine Bachelorarbeit mit der Note 1,3 behandelte die Konzeption, Implementierung und
+      Evaluation einer hochskalierbaren Kubernetes-basierten SaaS-Plattform auf Kubernetes
+      Control Plane (KCP).
     </p>,
   },
   {
@@ -388,9 +410,16 @@ export const experience: TimelineItem[] = [
     title: 'Werkstudent Softwareentwicklung',
     content: (
       <p>
-        Werkstudent als Fullstack-Entwickler mit Fokus auf Frontend-Testing: Verantwortlich für Konzeption, Umsetzung und Wartung einer
-        skalierbaren Testarchitektur (Pact, Playwright, Unit-Tests) zur Sicherstellung der Softwarequalität in einem modernen Cloud-Native
-        CI/CD-Umfeld.
+        Werkstudent als Fullstack-Entwickler mit Schwerpunkt auf Testarchitektur und
+        Cloud-Native-Umgebungen.
+        Verantwortlich für die Konzeption und Implementierung einer eigenen mehrschichtigen
+        End-to-End-Testarchitektur (Playwright, Pact, Jest) sowie für deren Integration in ein
+        modernes CI/CD-Setup.
+        Zusätzlich Entwicklung produktiver Container-Images (Podman) inklusive Build-Skripten,
+        Umsetzung von OAuth2-Authentifizierung für E2E-Szenarien und Erweiterungen im Backend
+        (Spring) und Frontend. Dabei übernehme ich die Rolle eines SDET/Testarchitekten, löse
+        Probleme eigenständig und sorge so für die zuverlässige Qualitätssicherung von Software,
+        die später von tausenden Kunden produktiv eingesetzt wird.
       </p>
     ),
   },
@@ -400,9 +429,15 @@ export const experience: TimelineItem[] = [
     title: 'Studentischer Praktikant',
     content: (
       <p>
-        Entwicklung und Optimierung von 'Kamäleon', einem internen Tool für das Kapazitätsmanagement. Full-Stack-Entwicklung mit Angular 13 
-        und Payara 5 in der Azure Cloud sowie Migration der CI/CD-Pipeline von Jenkins zu GitHub Actions. Zusammenarbeit in einem 
-        multinationalen Entwicklerteam für eine effiziente und zukunftsorientierte Softwarelösung.
+        Werkstudent im internationalen Entwicklungsteam (50+ Entwickler) für das
+        Kapazitätsmanagement-Tool Kamäleon.
+        In fünf Monaten trug ich mit über 35.000 eigenen Codezeilen signifikant zur Weiterentwicklung
+        der Anwendung bei. Neben Full-Stack-Aufgaben mit Angular und Payara übernahm ich Verantwortung
+        in der Qualitätssicherung (Code Reviews, Defect-Analyse, Einführung von Linting-, Ruleset- und
+        SonarQube-Standards) sowie in der Projektstruktur (Branching-Strategie, CI/CD-Migration von
+        Jenkins zu GitHub Actions).
+        Dabei sammelte ich umfassende Erfahrung in Cloud-Native-Umgebungen und arbeitete eng mit
+        internationalen Kollegen in Südafrika und Bulgarien zusammen.
       </p>
     ),
   },
@@ -412,10 +447,14 @@ export const experience: TimelineItem[] = [
     title: 'Unternehmensinhaber',
     content: (
       <p>
-        WebPulse Development (Burger Steven, Linhardt David GbR, ehemals SythIT) ist ein von mir und einem Kommilitonen gegründetes 
-        Webentwicklungsunternehmen, das wir neben dem Studium betrieben. Wir spezialisierten uns auf die Bereitstellung von 
-        Webentwicklungsdienstleistungen für kleine und mittelständische Unternehmen und nutzten diese Gelegenheit, um wertvolle Praxiserfahrung 
-        in der realen Projektarbeit zu sammeln.
+        WebPulse Development (Burger Steven, Linhardt David GbR, ehemals SythIT) ist ein von mir vor
+        dem Studium gegründetes Webentwicklungsunternehmen, das ich gemeinsam mit einem Kommilitonen
+        betrieben habe.
+        Neben der Umsetzung von Projekten für kleine und mittelständische Unternehmen habe ich dort
+        insbesondere Erfahrung im Aufbau von Anwendungen from scratch, im Projektmanagement, Ticketing
+        und in der Arbeit ohne Sicherheitsnetz gesammelt.
+        Die eigenständige Verantwortung unter Zeitdruck hat mich gelehrt, Projekte ganzheitlich zu
+        steuern und flexibel das jeweils beste Tool für die Anforderung auszuwählen.
       </p>
     ),
   },
