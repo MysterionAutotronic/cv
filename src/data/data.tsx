@@ -183,12 +183,20 @@ export const skills: SkillGroup[] = [
         level: 8,
       },
       {
-        name: 'Java',
-        level: 7,
+        name: 'Express',
+        level: 8,
+      },
+      {
+        name: 'Springboot',
+        level: 6,
       },
       {
         name: 'Electron.js',
         level: 5,
+      },
+      {
+        name: 'Quarkus',
+        level: 4,
       },
     ],
   },
@@ -197,23 +205,47 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'Projektkonfiguration',
-        level: 9,
+        level: 10,
       },
       {
-        name: 'KCP (Kubernetes Control Plane)',
+        name: 'KCP',
+        level: 8,
+      },
+      {
+        name: 'TMC',
         level: 8,
       },
       {
         name: 'Kubernetes',
+        level: 8,
+      },
+      {
+        name: 'Docker',
         level: 7,
+      },
+      {
+        name: 'Podman',
+        level: 6,
       },
       {
         name: 'GitHub Actions',
         level: 6,
       },
       {
-        name: 'Docker',
+        name: 'Helm',
+        level: 5,
+      },
+      {
+        name: 'Kind',
+        level: 5,
+      },
+      {
+        name: 'Oauth2',
         level: 4,
+      },
+      {
+        name: 'Splunk',
+        level: 3,
       },
     ],
   },
@@ -238,6 +270,10 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Java',
+        level: 7,
+      },
+      {
+        name: 'Go',
         level: 7,
       },
       {
