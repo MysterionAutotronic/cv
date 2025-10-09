@@ -1,12 +1,13 @@
-import { useRouter } from 'next/router';
+import {useRouter} from 'next/router';
+import {memo} from 'react';
 
-const LangSwitch = () => {
+const LangSwitch = memo(function LangSwitch() {
     const router = useRouter();
-    const { asPath, locale } = router;
+    const {asPath, locale} = router;
     const nextLocale = locale === 'de' ? 'en' : 'de';
 
     const switchLang = () => {
-        router.push(asPath, asPath, { locale: nextLocale });
+        router.push(asPath, asPath, {locale: nextLocale});
     };
 
     return (
@@ -14,6 +15,6 @@ const LangSwitch = () => {
         {nextLocale === 'de' ? 'Deutsch' : 'English'}
         </button>
     );
-};
+});
 
 export default LangSwitch;
