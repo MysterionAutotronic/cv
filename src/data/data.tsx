@@ -496,6 +496,15 @@ export const experience: TimelineItem[] = [
   },
 ];
 
+export const certifications: TimelineItem[] = [
+  {
+    date: '2025 (in Arbeit)',
+    location: 'ECCouncil',
+    title: 'Certified Ethical Hacker (CEHv13)',
+    content: (<div></div>),
+  }
+];
+
 /**
  * Testimonial section
  */
