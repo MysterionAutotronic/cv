@@ -1,20 +1,26 @@
 /* eslint-env node */
+const withNextTranslate = require('next-translate-plugin');
 
-// https://github.com/vercel/next.js/blob/master/packages/next/next-server/server/config.ts
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  webpack: config => {
-    const oneOfRule = config.module.rules.find(rule => rule.oneOf);
+  i18n: {
+    locales: ['en', 'de'],
+    defaultLocale: 'en',
+  },
 
-    // Next 12 has multiple TS loaders, and we need to update all of them.
-    const tsRules = oneOfRule.oneOf.filter(rule => rule.test && rule.test.toString().includes('tsx|ts'));
-
-    tsRules.forEach(rule => {
-      // eslint-disable-next-line no-param-reassign
-      rule.include = undefined;
-    });
-
+  webpack: (config) => {
+    const oneOfRule = config.module.rules.find((rule) => rule.oneOf);
+    if (oneOfRule && Array.isArray(oneOfRule.oneOf)) {
+      const tsRules = oneOfRule.oneOf.filter(
+        (rule) => rule.test && rule.test.toString().includes('tsx|ts')
+      );
+      tsRules.forEach((rule) => {
+        rule.include = undefined;
+      });
+    }
     return config;
   },
+
   compress: true,
   generateEtags: true,
   pageExtensions: ['tsx', 'mdx', 'ts'],
@@ -25,15 +31,10 @@ const nextConfig = {
   trailingSlash: false,
   images: {
     remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
-      },{
-        protocol: 'https',
-        hostname: 'source.unsplash.com',
-      },
+      { protocol: 'https', hostname: 'images.unsplash.com' },
+      { protocol: 'https', hostname: 'source.unsplash.com' },
     ],
   },
 };
 
-module.exports = nextConfig;
+module.exports = withNextTranslate(nextConfig);
