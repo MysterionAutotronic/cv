@@ -3,10 +3,6 @@ const withNextTranslate = require('next-translate-plugin');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  i18n: {
-    locales: ['en', 'de'],
-    defaultLocale: 'en',
-  },
 
   webpack: (config) => {
     const oneOfRule = config.module.rules.find((rule) => rule.oneOf);

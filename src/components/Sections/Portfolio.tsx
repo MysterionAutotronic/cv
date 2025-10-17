@@ -55,7 +55,7 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, descrip
     (event: MouseEvent<HTMLElement>) => {
       if (mobile && !showOverlay) {
         event.preventDefault();
-        //setShowOverlay(!showOverlay);
+        setShowOverlay(!showOverlay);
       }
     },
     [mobile, showOverlay],
