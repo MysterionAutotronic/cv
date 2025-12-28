@@ -187,6 +187,10 @@ export const skills: SkillGroup[] = [
         level: 8,
       },
       {
+        name: 'Fiber (Go)',
+        level: 7,
+      },
+      {
         name: 'Springboot',
         level: 6,
       },
@@ -220,7 +224,15 @@ export const skills: SkillGroup[] = [
         level: 8,
       },
       {
+        name: 'ArgoCD',
+        level: 7,
+      },
+      {
         name: 'Docker',
+        level: 7,
+      },
+      {
+        name: 'GitOps',
         level: 7,
       },
       {
@@ -228,25 +240,41 @@ export const skills: SkillGroup[] = [
         level: 6,
       },
       {
+        name: 'Kustomize',
+        level: 6,
+      },
+      {
         name: 'GitHub Actions',
         level: 6,
+      },
+      {
+        name: 'Terraform',
+        level: 5,
       },
       {
         name: 'Helm',
         level: 5,
       },
       {
-        name: 'Kind',
+        name: 'OIDC (Keycloak)',
         level: 5,
       },
+            {
+        name: 'Prometheus',
+        level: 4,
+      },
       {
-        name: 'Oauth2',
+        name: 'Grafana',
+        level: 4,
+      },
+      {
+        name: 'Ansible',
         level: 4,
       },
       {
         name: 'Splunk',
-        level: 3,
-      },
+        level: 2,
+      }
     ],
   },
   {
@@ -357,6 +385,47 @@ export const skills: SkillGroup[] = [
         name: 'Pact',
         level: 3,
       },
+    ]
+  },
+  {
+    name: 'Datenbanken & Storage',
+    skills: [
+      {
+        name: 'Redis',
+        level: 7,
+      },
+      {
+        name: 'Valkey',
+        level: 7,
+      },
+      {
+        name: 'S3',
+        level: 7,
+      },
+      {
+        name: 'MinIO',
+        level: 7,
+      },
+      {
+        name: 'PostgreSQL',
+        level: 6,
+      },
+      {
+        name: 'MongoDB',
+        level: 5,
+      },
+      {
+        name: 'Hadoop',
+        level: 4,
+      },
+      {
+        name: 'Spark',
+        level: 4,
+      },
+      {
+        name: 'Elasticsearch',
+        level: 3,
+      }
     ]
   }
 ];
