@@ -21,7 +21,7 @@ import portfolioImage4 from '../images/portfolio/portfolio-4.jpg';
 // import portfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 // import portfolioImage6 from '../images/portfolio/portfolio-6.jpg';
 import portfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-// import portfolioImage8 from '../images/portfolio/portfolio-8.jpg';
+import portfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 // import portfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 // import portfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 // import portfolioImage11 from '../images/portfolio/portfolio-11.jpg';
@@ -459,8 +459,16 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'DATEV Anlag',
     description: `Arbeit an einem Tool zur Anlagenbuchführung. Full-Stack Entwicklung mit Angular 17 und Springboot
     mit Fokus auf Pact, Jest und Playwright Tests.`,
-    url: '#portfolio',
+    url: 'https://www.datev.de/web/de/shop/produkt-details/datev-anlagenbuchfuehrung-99290',
     image: portfolioImage7,
+  },
+  {
+    title: 'Echtzeitlagebild der deutschen Internet-Infrastruktur',
+    description: `Plattformlösung zur Echtzeit-Visualisierung der deutschen Internet-Infrastruktur mit
+    Go-Backend und Next.js-Frontend sowie Keycloak-basierter OIDC-SSO-Lösung inkl. eigenem Auth-Proxy,
+    Admin-Dashboard und feingranularem RBAC, mit GitOps basierter CI/CD pipeline mit GitLab CI und ArgoCD auf Kubernetes.`,
+    url: 'https://dashboard.univ.leitwert.net/',
+    image: portfolioImage8,
   }
 ];
 
