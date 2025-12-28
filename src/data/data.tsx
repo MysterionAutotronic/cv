@@ -14,7 +14,7 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 //import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 //import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
-// import portfolioImage1 from '../images/portfolio/portfolio-1.jpg';
+import portfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import portfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import portfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import portfolioImage4 from '../images/portfolio/portfolio-4.jpg';
@@ -469,6 +469,12 @@ export const portfolioItems: PortfolioItem[] = [
     Admin-Dashboard und feingranularem RBAC, mit GitOps basierter CI/CD pipeline mit GitLab CI und ArgoCD auf Kubernetes.`,
     url: 'https://dashboard.univ.leitwert.net/',
     image: portfolioImage8,
+  },
+  {
+    title: 'FocusBoard',
+    description: `WIP`,
+    url: 'https://focusboard.web-pulse.dev/',
+    image: portfolioImage1,
   }
 ];
 
