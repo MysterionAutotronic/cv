@@ -187,20 +187,20 @@ export const skills: SkillGroup[] = [
         level: 8,
       },
       {
+        name: 'Quarkus',
+        level: 7,
+      },
+      {
         name: 'Fiber (Go)',
         level: 7,
       },
       {
-        name: 'Springboot',
+        name: 'Spring Boot',
         level: 6,
       },
       {
         name: 'Electron.js',
         level: 5,
-      },
-      {
-        name: 'Quarkus',
-        level: 4,
       },
     ],
   },
@@ -224,6 +224,10 @@ export const skills: SkillGroup[] = [
         level: 8,
       },
       {
+        name: 'sops / ksops',
+        level: 8,
+      },
+      {
         name: 'ArgoCD',
         level: 7,
       },
@@ -234,6 +238,10 @@ export const skills: SkillGroup[] = [
       {
         name: 'GitOps',
         level: 7,
+      },
+      {
+        name: 'AWS EKS',
+        level: 6,
       },
       {
         name: 'Podman',
@@ -248,7 +256,7 @@ export const skills: SkillGroup[] = [
         level: 6,
       },
       {
-        name: 'Terraform',
+        name: 'Terraform / OpenTofu',
         level: 5,
       },
       {
@@ -366,6 +374,10 @@ export const skills: SkillGroup[] = [
         level: 8,
       },
       {
+        name: 'Pact',
+        level: 7,
+      },
+      {
         name: 'JUnit 5',
         level: 6,
       },
@@ -380,10 +392,6 @@ export const skills: SkillGroup[] = [
       {
         name: 'Cypress',
         level: 4,
-      },
-      {
-        name: 'Pact',
-        level: 3,
       },
     ]
   },
@@ -472,7 +480,9 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'FocusBoard',
-    description: `WIP`,
+    description: `Plattformprojekt für die Erstellung und Verwaltung von Focus Sessions mit statistischen Auswertungen.
+    Full-Stack mit Next.js, Express, PostgreSQL, Quarkus, Fiber (Go), Kubernetes, Docker Compose, GitOps und
+    AWS EKS via OpenTofu.`,
     url: 'https://focusboard.web-pulse.dev/',
     image: portfolioImage1,
   }
