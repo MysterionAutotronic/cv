@@ -493,7 +493,7 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'Oktober 2025 - Present',
+    date: 'Seit Oktober 2025',
     location: 'Technische Hochschule Ingolstadt',
     title: 'M. Sc. Cloud Applications und Security Engineering',
     content: <p>
