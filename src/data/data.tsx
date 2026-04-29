@@ -534,7 +534,25 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'März 2025 - Present',
+    date: 'Seit März 2026',
+    location: 'DATEV eG',
+    title: 'Werkstudent Public Cloud Security',
+    content: (
+      <p>
+          Werkstudent im Bereich Public Cloud Security mit Fokus auf AWS und Azure.
+          Mitarbeit an der Konzeption und Umsetzung standardisierter Security-Bausteine
+          sowie Ableitung konkreter Architekturmaßnahmen aus übergreifenden Governance-Vorgaben.
+          Tätigkeit an der Schnittstelle zwischen Security-Anforderungen und Plattform-/Entwicklungsteams,
+          mit dem Ziel, regulatorische und organisatorische Vorgaben in konsumierbare,
+          entwicklerfreundliche Lösungen zu überführen.
+          Unterstützung bei der Bewertung von Cloud-Architekturen unter Sicherheitsaspekten,
+          sowie Beitrag zur Etablierung skalierbarer Security-Praktiken und -Standards
+          in Cloud-Native-Umgebungen.
+      </p>
+    ),
+  },
+  {
+    date: 'März 2025 - Februar 2026',
     location: 'DATEV eG',
     title: 'Werkstudent Softwareentwicklung',
     content: (
