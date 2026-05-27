@@ -14,17 +14,24 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 //import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 //import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
-import portfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import portfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import portfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import portfolioImage4 from '../images/portfolio/portfolio-4.jpg';
+// import portfolioImage1 from '../images/portfolio/portfolio-1.jpg';
+// import portfolioImage2 from '../images/portfolio/portfolio-2.jpg';
+// import portfolioImage3 from '../images/portfolio/portfolio-3.jpg';
+// import portfolioImage4 from '../images/portfolio/portfolio-4.jpg';
 // import portfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 // import portfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import portfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import portfolioImage8 from '../images/portfolio/portfolio-8.jpg';
+// import portfolioImage7 from '../images/portfolio/portfolio-7.jpg';
+// import portfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 // import portfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 // import portfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 // import portfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+import amplimindImage from '../images/portfolio/nb2_amplimind.png';
+import kamaeleonImage from '../images/portfolio/nb2_kamaeleon.png';
+import bitoolImage from '../images/portfolio/nb2_bitool.png';
+import anlagImage from '../images/portfolio/nb2_anlag.png';
+import leitwertImage from '../images/portfolio/nb2_leitwert.png';
+import focusImage from '../images/portfolio/nb2_focus.png';
+import pcsecImage from '../images/portfolio/nb2_pcsec.png';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -444,9 +451,9 @@ export const skills: SkillGroup[] = [
 export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Coding Challenge Plattform für amplimind',
-    description: `Erstellung einer Coding Challenge Plattform für amplimind mit React und Kotlin Springboot. `,
+    description: `Erstellung einer Coding Challenge Plattform für amplimind mit React und Kotlin Springboot.`,
     url: 'https://github.com/amplimindcc',
-    image: portfolioImage3,
+    image: amplimindImage,
   },
   {
     title: 'BMW Kamäleon',
@@ -454,21 +461,21 @@ export const portfolioItems: PortfolioItem[] = [
     bei BMW. Full-Stack-Entwicklung mit Angular 13 und Payara 5 in der Azure Cloud, Migration der CI/CD-Pipeline von Jenkins zu GitHub Actions 
     und Integration von ESLint, EditorConfig und Prettier.`,
     url: 'https://kamaeleon.bmw.com/',
-    image: portfolioImage4,
+    image: kamaeleonImage,
   },
   {
     title: 'Business-Intelligence-Tool',
     description: `Standalone Tool zur Generierung und visuellen Aufbereitung betriebswirtschaftlicher Kennzahlen aus CSV Dateien 
     (Kassensystem und Inventursystem) für einen Gastronomiebetrieb. `,
     url: 'https://github.com/WebStackWizards',
-    image: portfolioImage2,
+    image: bitoolImage,
   },
   {
     title: 'DATEV Anlag',
     description: `Arbeit an einem Tool zur Anlagenbuchführung. Full-Stack Entwicklung mit Angular 17 und Springboot
     mit Fokus auf Pact, Jest und Playwright Tests.`,
     url: 'https://www.datev.de/web/de/shop/produkt-details/datev-anlagenbuchfuehrung-99290',
-    image: portfolioImage7,
+    image: anlagImage,
   },
   {
     title: 'Echtzeitlagebild der deutschen Internet-Infrastruktur',
@@ -476,16 +483,24 @@ export const portfolioItems: PortfolioItem[] = [
     Go-Backend und Next.js-Frontend sowie Keycloak-basierter OIDC-SSO-Lösung inkl. eigenem Auth-Proxy,
     Admin-Dashboard und feingranularem RBAC, mit GitOps basierter CI/CD pipeline mit GitLab CI und ArgoCD auf Kubernetes.`,
     url: 'https://dashboard.univ.leitwert.net/',
-    image: portfolioImage8,
+    image: leitwertImage,
   },
   {
     title: 'FocusBoard',
     description: `Plattformprojekt für die Erstellung und Verwaltung von Focus Sessions mit statistischen Auswertungen.
     Full-Stack mit Next.js, Express, PostgreSQL, Quarkus, Fiber (Go), Kubernetes, Docker Compose, GitOps und
     AWS EKS via OpenTofu.`,
-    url: 'https://focusboard.web-pulse.dev/',
-    image: portfolioImage1,
-  }
+    url: 'https://github.com/orgs/CloudNativeDevelopmentTeamH/repositories',
+    image: focusImage,
+  },
+  {
+    title: 'DATEV Public Cloud Security',
+    description: `Konzeption und Umsetzung eines Tools um standardisierte Security-Bausteine in einem CMS regelbasiert filterbar
+    und konsumierbar für Entwicklerteams bereitzustellen und eine geführte Ableitung von Architekturmaßnahmen mit abschließender
+    KI-gestützter Validierung und regelbasiertem Reporting zu ermöglichen.`,
+    url: '',
+    image: pcsecImage,
+  },
 ];
 
 /**
