@@ -34,6 +34,7 @@ import leitwertImage from '../images/portfolio/nb2_leitwert.png';
 import pcsecImage from '../images/portfolio/nb2_pcsec.png';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
+import kcpImage from '../images/portfolio/nb2_kcp.png';
 import {
   About,
   ContactSection,
@@ -476,6 +477,15 @@ export const portfolioItems: PortfolioItem[] = [
     mit Fokus auf Pact, Jest und Playwright Tests.`,
     url: 'https://www.datev.de/web/de/shop/produkt-details/datev-anlagenbuchfuehrung-99290',
     image: anlagImage,
+  },
+  {
+    title: 'Multi-Tenant SaaS-Infrastruktur via KCP',
+    description: `Konzeption und Implementierung einer hochskalierbaren Kubernetes-Plattform mit Fokus auf strikte Mandantenisolierung
+    durch Control-Plane-Virtualisierung mittels Kubernetes Control Plane (KCP/TMC). Aufbau deterministischer Cluster-Topologien und
+    dynamischer Workspaces, gekoppelt mit deklarativem Lifecycle-Management via APIBindings und Custom Resource Definitions (CRDs).
+    Vollautomatisierte Tenant-Provisionierung durch Tekton-Pipelines und Helm.`,
+    url: 'https://github.com/MysterionAutotronic/BachelorThesis/blob/main/thesis.pdf',
+    image: kcpImage,
   },
   {
     title: 'Echtzeitlagebild der deutschen Internet-Infrastruktur',
