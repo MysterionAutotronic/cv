@@ -14,6 +14,7 @@ import heroImage from '../images/header-background.webp';
 import amplimindImage from '../images/portfolio/nb2_amplimind.png';
 import anlagImage from '../images/portfolio/nb2_anlag.png';
 import bitoolImage from '../images/portfolio/nb2_bitool.png';
+import dfirImage from '../images/portfolio/nb2_dfir.png';
 import focusImage from '../images/portfolio/nb2_focus.png';
 import kamaeleonImage from '../images/portfolio/nb2_kamaeleon.png';
 import kcpImage from '../images/portfolio/nb2_kcp.png';
@@ -499,6 +500,14 @@ export const portfolioItems: PortfolioItem[] = [
     url: '',
     image: pcsecImage,
   },
+  {
+    title: 'DFIR: Cryptographic Artifact Extraction',
+    description: `Forensische Extraktion und systematische Analyse lokaler Browser-Artefakte aus rohen Linux-Disk-Images (dd).
+    Analytische Aufschlüsselung des Entschlüsselungsprozesses (via firepwd) zur Rekonstruktion symmetrisch verschlüsselter
+    Credentials (z.B. key4.db / logins.json) auf OS-Ebene.`,
+    url: '',
+    image: 'dfirImage',
+  }
 ];
 
 /**
