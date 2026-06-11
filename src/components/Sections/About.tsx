@@ -13,7 +13,11 @@ const About: FC = memo(() => {
         {!!profileImageSrc && (
           <div className="col-span-1 flex justify-center md:justify-start">
             <div className="relative h-40 w-40 max-h-64 max-h-64 overflow-hidden rounded-xl md:h-56 md:w-56 mr-3">
-              <Image alt="about-me-image" className="h-full w-full object-cover transition-transform duration-300 hover:scale-110" src={profileImageSrc} />
+              <Image
+                alt="about-me-image"
+                className="h-full w-full object-cover transition-transform duration-300 hover:scale-110"
+                src={profileImageSrc}
+              />
             </div>
           </div>
         )}

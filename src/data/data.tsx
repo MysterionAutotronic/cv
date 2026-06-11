@@ -10,6 +10,7 @@ import {
 
 import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
+import heroImage from '../images/header-background.webp';
 import amplimindImage from '../images/portfolio/nb2_amplimind.png';
 import anlagImage from '../images/portfolio/nb2_anlag.png';
 import bitoolImage from '../images/portfolio/nb2_bitool.png';
@@ -18,10 +19,8 @@ import kamaeleonImage from '../images/portfolio/nb2_kamaeleon.png';
 import kcpImage from '../images/portfolio/nb2_kcp.png';
 import leitwertImage from '../images/portfolio/nb2_leitwert.png';
 import pcsecImage from '../images/portfolio/nb2_pcsec.png';
-import heroImage from '../images/header-background.webp';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
-
 import {
   About,
   ContactSection,
@@ -40,7 +39,7 @@ import {
  */
 export const homePageMeta: HomepageMeta = {
   title: 'David Linhardt',
-  description: "my CV",
+  description: 'my CV',
 };
 
 /**
@@ -73,10 +72,9 @@ export const heroData: Hero = {
         und arbeite nebenher als Werkstudent bei <strong className="text-stone-100">DATEV</strong>.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Ich verfüge über breite Full-Stack- und DevOps-Erfahrung:
-        moderne Web- und App-Entwicklung, skalierbare Backends sowie Entwicklung von Container- und 
-        Kubernetes-Umgebungen.
-        Ergänzend bringe ich fundiertes Know-how in Testarchitektur, Auth und Monitoring mit.
+        Ich verfüge über breite Full-Stack- und DevOps-Erfahrung: moderne Web- und App-Entwicklung, skalierbare Backends
+        sowie Entwicklung von Container- und Kubernetes-Umgebungen. Ergänzend bringe ich fundiertes Know-how in
+        Testarchitektur, Auth und Monitoring mit.
       </p>
     </>
   ),
@@ -99,7 +97,10 @@ const bDay: string = '2002-01-10';
 function calculateAge(birthDate: Date): number {
   const now = new Date();
   let age = now.getFullYear() - birthDate.getFullYear();
-  if (now.getMonth() < birthDate.getMonth() || (now.getMonth() === birthDate.getMonth() && now.getDate() < birthDate.getDate())) {
+  if (
+    now.getMonth() < birthDate.getMonth() ||
+    (now.getMonth() === birthDate.getMonth() && now.getDate() < birthDate.getDate())
+  ) {
     age--;
   }
   return age;
@@ -262,7 +263,7 @@ export const skills: SkillGroup[] = [
         name: 'OIDC (Keycloak)',
         level: 5,
       },
-            {
+      {
         name: 'Prometheus',
         level: 4,
       },
@@ -277,7 +278,7 @@ export const skills: SkillGroup[] = [
       {
         name: 'Splunk',
         level: 2,
-      }
+      },
     ],
   },
   {
@@ -388,7 +389,7 @@ export const skills: SkillGroup[] = [
         name: 'Cypress',
         level: 4,
       },
-    ]
+    ],
   },
   {
     name: 'Datenbanken & Storage',
@@ -428,9 +429,9 @@ export const skills: SkillGroup[] = [
       {
         name: 'Elasticsearch',
         level: 3,
-      }
-    ]
-  }
+      },
+    ],
+  },
 ];
 
 /**
@@ -501,40 +502,44 @@ export const portfolioItems: PortfolioItem[] = [
 ];
 
 /**
- * Resume section 
+ * Resume section
  */
 export const education: TimelineItem[] = [
   {
     date: 'Seit Oktober 2025',
     location: 'Technische Hochschule Ingolstadt',
     title: 'M. Sc. Cloud Applications und Security Engineering',
-    content: <p>
-      Im Masterstudium vertiefe ich meine Kenntnisse in Cloud-Architekturen, DevOps und
-      IT-Security und verknüpfe diese mit aktueller Forschung und Praxis.
-    </p>,
+    content: (
+      <p>
+        Im Masterstudium vertiefe ich meine Kenntnisse in Cloud-Architekturen, DevOps und IT-Security und verknüpfe
+        diese mit aktueller Forschung und Praxis.
+      </p>
+    ),
   },
   {
     date: 'Oktober 2021 - September 2025',
     location: 'Technische Hochschule Ingolstadt',
     title: 'B. Sc. Informatik',
-    content: <p>
-      Mein Bachelorstudium in Informatik (Abschlussnote 2,0) vermittelte mir fundierte Kenntnisse
-      in Softwareentwicklung, Algorithmen, Systemarchitekturen und IT-Management.
-      Den Schwerpunkt legte ich auf moderne Web- und Cloud-Technologien, die ich in Projekten und
-      Praktika praxisnah vertiefen konnte.
-      Meine Bachelorarbeit mit der Note 1,3 behandelte die Konzeption, Implementierung und
-      Evaluation einer hochskalierbaren Kubernetes-basierten SaaS-Plattform auf Kubernetes
-      Control Plane (KCP).
-    </p>,
+    content: (
+      <p>
+        Mein Bachelorstudium in Informatik (Abschlussnote 2,0) vermittelte mir fundierte Kenntnisse in
+        Softwareentwicklung, Algorithmen, Systemarchitekturen und IT-Management. Den Schwerpunkt legte ich auf moderne
+        Web- und Cloud-Technologien, die ich in Projekten und Praktika praxisnah vertiefen konnte. Meine Bachelorarbeit
+        mit der Note 1,3 behandelte die Konzeption, Implementierung und Evaluation einer hochskalierbaren
+        Kubernetes-basierten SaaS-Plattform auf Kubernetes Control Plane (KCP).
+      </p>
+    ),
   },
   {
     date: 'September 2020 - Juli 2021',
     location: 'Technische Universität München',
     title: 'B. Sc. Bauingenieurwesen (ohne Abschluss)',
-    content: <p>
-      Während meines Bauingenieurstudiums habe ich im Modul Bauinformatik meine Leidenschaft und mein Talent für das 
-      Programmieren entdeckt.
-    </p>,
+    content: (
+      <p>
+        Während meines Bauingenieurstudiums habe ich im Modul Bauinformatik meine Leidenschaft und mein Talent für das
+        Programmieren entdeckt.
+      </p>
+    ),
   },
   {
     date: 'August 2012 - Juli 2020',
@@ -551,15 +556,13 @@ export const experience: TimelineItem[] = [
     title: 'Werkstudent Public Cloud Security',
     content: (
       <p>
-          Werkstudent im Bereich Public Cloud Security mit Fokus auf AWS und Azure.
-          Mitarbeit an der Konzeption und Umsetzung standardisierter Security-Bausteine
-          sowie Ableitung konkreter Architekturmaßnahmen aus übergreifenden Governance-Vorgaben.
-          Tätigkeit an der Schnittstelle zwischen Security-Anforderungen und Plattform-/Entwicklungsteams,
-          mit dem Ziel, regulatorische und organisatorische Vorgaben in konsumierbare,
-          entwicklerfreundliche Lösungen zu überführen.
-          Unterstützung bei der Bewertung von Cloud-Architekturen unter Sicherheitsaspekten,
-          sowie Beitrag zur Etablierung skalierbarer Security-Praktiken und -Standards
-          in Cloud-Native-Umgebungen.
+        Werkstudent im Bereich Public Cloud Security mit Fokus auf AWS und Azure. Mitarbeit an der Konzeption und
+        Umsetzung standardisierter Security-Bausteine sowie Ableitung konkreter Architekturmaßnahmen aus übergreifenden
+        Governance-Vorgaben. Tätigkeit an der Schnittstelle zwischen Security-Anforderungen und
+        Plattform-/Entwicklungsteams, mit dem Ziel, regulatorische und organisatorische Vorgaben in konsumierbare,
+        entwicklerfreundliche Lösungen zu überführen. Unterstützung bei der Bewertung von Cloud-Architekturen unter
+        Sicherheitsaspekten, sowie Beitrag zur Etablierung skalierbarer Security-Praktiken und -Standards in
+        Cloud-Native-Umgebungen.
       </p>
     ),
   },
@@ -569,16 +572,13 @@ export const experience: TimelineItem[] = [
     title: 'Werkstudent Softwareentwicklung',
     content: (
       <p>
-        Werkstudent als Fullstack-Entwickler mit Schwerpunkt auf Testarchitektur und
-        Cloud-Native-Umgebungen.
-        Verantwortlich für die Konzeption und Implementierung einer eigenen mehrschichtigen
-        End-to-End-Testarchitektur (Playwright, Pact, Jest) sowie für deren Integration in ein
-        modernes CI/CD-Setup.
-        Zusätzlich Entwicklung produktiver Container-Images (Podman) inklusive Build-Skripten,
-        Umsetzung von OAuth2-Authentifizierung für E2E-Szenarien und Erweiterungen im Backend
-        (Spring) und Frontend. Dabei übernehme ich die Rolle eines SDET/Testarchitekten, löse
-        Probleme eigenständig und sorge so für die zuverlässige Qualitätssicherung von Software,
-        die später von tausenden Kunden produktiv eingesetzt wird.
+        Werkstudent als Fullstack-Entwickler mit Schwerpunkt auf Testarchitektur und Cloud-Native-Umgebungen.
+        Verantwortlich für die Konzeption und Implementierung einer eigenen mehrschichtigen End-to-End-Testarchitektur
+        (Playwright, Pact, Jest) sowie für deren Integration in ein modernes CI/CD-Setup. Zusätzlich Entwicklung
+        produktiver Container-Images (Podman) inklusive Build-Skripten, Umsetzung von OAuth2-Authentifizierung für
+        E2E-Szenarien und Erweiterungen im Backend (Spring) und Frontend. Dabei übernehme ich die Rolle eines
+        SDET/Testarchitekten, löse Probleme eigenständig und sorge so für die zuverlässige Qualitätssicherung von
+        Software, die später von tausenden Kunden produktiv eingesetzt wird.
       </p>
     ),
   },
@@ -588,15 +588,12 @@ export const experience: TimelineItem[] = [
     title: 'Studentischer Praktikant',
     content: (
       <p>
-        Werkstudent im internationalen Entwicklungsteam (50+ Entwickler) für das
-        Kapazitätsmanagement-Tool Kamäleon.
-        In fünf Monaten trug ich mit über 35.000 eigenen Codezeilen signifikant zur Weiterentwicklung
-        der Anwendung bei. Neben Full-Stack-Aufgaben mit Angular und Payara übernahm ich Verantwortung
-        in der Qualitätssicherung (Code Reviews, Defect-Analyse, Einführung von Linting-, Ruleset- und
-        SonarQube-Standards) sowie in der Projektstruktur (Branching-Strategie, CI/CD-Migration von
-        Jenkins zu GitHub Actions).
-        Dabei sammelte ich umfassende Erfahrung in Cloud-Native-Umgebungen und arbeitete eng mit
-        internationalen Kollegen in Südafrika und Bulgarien zusammen.
+        Werkstudent im internationalen Entwicklungsteam (50+ Entwickler) für das Kapazitätsmanagement-Tool Kamäleon. In
+        fünf Monaten trug ich mit über 35.000 eigenen Codezeilen signifikant zur Weiterentwicklung der Anwendung bei.
+        Neben Full-Stack-Aufgaben mit Angular und Payara übernahm ich Verantwortung in der Qualitätssicherung (Code
+        Reviews, Defect-Analyse, Einführung von Linting-, Ruleset- und SonarQube-Standards) sowie in der Projektstruktur
+        (Branching-Strategie, CI/CD-Migration von Jenkins zu GitHub Actions). Dabei sammelte ich umfassende Erfahrung in
+        Cloud-Native-Umgebungen und arbeitete eng mit internationalen Kollegen in Südafrika und Bulgarien zusammen.
       </p>
     ),
   },
@@ -606,14 +603,12 @@ export const experience: TimelineItem[] = [
     title: 'Unternehmensinhaber',
     content: (
       <p>
-        WebPulse Development (Burger Steven, Linhardt David GbR, ehemals SythIT) ist ein von mir vor
-        dem Studium gegründetes Webentwicklungsunternehmen, das ich gemeinsam mit einem Kommilitonen
-        betrieben habe.
-        Neben der Umsetzung von Projekten für kleine und mittelständische Unternehmen habe ich dort
-        insbesondere Erfahrung im Aufbau von Anwendungen from scratch, im Projektmanagement, Ticketing
-        und in der Arbeit ohne Sicherheitsnetz gesammelt.
-        Die eigenständige Verantwortung unter Zeitdruck hat mich gelehrt, Projekte ganzheitlich zu
-        steuern und flexibel das jeweils beste Tool für die Anforderung auszuwählen.
+        WebPulse Development (Burger Steven, Linhardt David GbR, ehemals SythIT) ist ein von mir vor dem Studium
+        gegründetes Webentwicklungsunternehmen, das ich gemeinsam mit einem Kommilitonen betrieben habe. Neben der
+        Umsetzung von Projekten für kleine und mittelständische Unternehmen habe ich dort insbesondere Erfahrung im
+        Aufbau von Anwendungen from scratch, im Projektmanagement, Ticketing und in der Arbeit ohne Sicherheitsnetz
+        gesammelt. Die eigenständige Verantwortung unter Zeitdruck hat mich gelehrt, Projekte ganzheitlich zu steuern
+        und flexibel das jeweils beste Tool für die Anforderung auszuwählen.
       </p>
     ),
   },
@@ -624,8 +619,8 @@ export const certifications: TimelineItem[] = [
     date: '2025 (in Arbeit)',
     location: 'ECCouncil',
     title: 'Certified Ethical Hacker (CEHv13)',
-    content: (<div></div>),
-  }
+    content: <div></div>,
+  },
 ];
 
 /**

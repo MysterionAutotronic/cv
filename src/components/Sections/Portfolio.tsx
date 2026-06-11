@@ -38,10 +38,7 @@ export default Portfolio;
 
 const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, description}}) => {
   return (
-    <a
-      className="absolute inset-0 h-full w-full bg-gray-900 opacity-80"
-      href={url}
-      target="_blank">
+    <a className="absolute inset-0 h-full w-full bg-gray-900 opacity-80" href={url} target="_blank">
       <div className="relative h-full w-full p-4">
         <div className="flex h-full w-full flex-col gap-y-2 overflow-y-auto overscroll-contain">
           <h2 className="text-center font-bold text-white opacity-100">{title}</h2>
