@@ -9,32 +9,19 @@ import {
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-//import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-//import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-//import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/header-background.webp';
-// import portfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-// import portfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-// import portfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-// import portfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-// import portfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-// import portfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-// import portfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-// import portfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-// import portfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-// import portfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-// import portfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import amplimindImage from '../images/portfolio/nb2_amplimind.png';
 import anlagImage from '../images/portfolio/nb2_anlag.png';
 import bitoolImage from '../images/portfolio/nb2_bitool.png';
 import focusImage from '../images/portfolio/nb2_focus.png';
+import kcpImage from '../images/portfolio/nb2_kcp.png';
 import kamaeleonImage from '../images/portfolio/nb2_kamaeleon.png';
 import leitwertImage from '../images/portfolio/nb2_leitwert.png';
 import pcsecImage from '../images/portfolio/nb2_pcsec.png';
+import heroImage from '../images/header-background.webp';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
-import kcpImage from '../images/portfolio/nb2_kcp.png';
+
 import {
   About,
   ContactSection,
