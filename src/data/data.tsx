@@ -506,7 +506,7 @@ export const portfolioItems: PortfolioItem[] = [
     Analytische Aufschlüsselung des Entschlüsselungsprozesses (via firepwd) zur Rekonstruktion symmetrisch verschlüsselter
     Credentials (z.B. key4.db / logins.json) auf OS-Ebene.`,
     url: '',
-    image: 'dfirImage',
+    image: dfirImage,
   }
 ];
 
