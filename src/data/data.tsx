@@ -4,6 +4,7 @@ import {
   BuildingOffice2Icon,
   CalendarIcon,
   FlagIcon,
+  LanguageIcon,
   MapIcon,
   SparklesIcon,
 } from '@heroicons/react/24/outline';
@@ -20,6 +21,7 @@ import kamaeleonImage from '../images/portfolio/nb2_kamaeleon.png';
 import kcpImage from '../images/portfolio/nb2_kcp.png';
 import leitwertImage from '../images/portfolio/nb2_leitwert.png';
 import pcsecImage from '../images/portfolio/nb2_pcsec.png';
+import ipiImage from '../images/portfolio/nb2_ipi.png';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -132,6 +134,7 @@ export const aboutData: About = {
     {label: 'Wohnort', text: 'Ingolstadt, Bayern', Icon: MapIcon},
     {label: 'Alter', text: Age.toString(), Icon: CalendarIcon},
     {label: 'Nationalität', text: 'Deutsch', Icon: FlagIcon},
+    {label: 'Sprachen', text: 'Deutsch (C2), Englisch (C1)', Icon: LanguageIcon},
     {label: 'Interessen', text: 'Autos, Kraftsport', Icon: SparklesIcon},
     {label: 'Studium', text: 'Technische Hochschule Ingolstadt', Icon: AcademicCapIcon},
     {label: 'Firma', text: 'DATEV eG', Icon: BuildingOffice2Icon},
@@ -143,34 +146,185 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Gesprochene Sprachen',
+    name: 'Cloud & Identity Security',
     skills: [
       {
-        name: 'Deutsch (C2)',
-        level: 10,
+        name: 'Entra ID',
+        level: 7,
       },
       {
-        name: 'English (C1)',
-        level: 9,
+        name: 'Azure Container Apps Auth',
+        level: 7,
+      },
+      {
+        name: 'AWS IAM',
+        level: 6,
+      },
+      {
+        name: 'Azure RBAC',
+        level: 6,
+      },
+      {
+        name: 'Security Groups / NSGs',
+        level: 6,
+      },
+      {
+        name: 'X.509 / PKI',
+        level: 6,
+      },
+      {
+        name: 'Kubernetes Security',
+        level: 5,
+      },
+      {
+        name: 'OIDC / Keycloak',
+        level: 5,
       },
     ],
   },
   {
-    name: 'Frontend development',
+    name: 'Security Engineering & Governance',
+    skills: [
+      {
+        name: 'Vulnerability Management',
+        level: 7,
+      },
+      {
+        name: 'LLM Security / Indirect Prompt Injection',
+        level: 7,
+      },
+      {
+        name: 'Common Criteria',
+        level: 6,
+      },
+      {
+        name: 'Risk Assessment (NIST, ISO 31000, TARA)',
+        level: 5,
+      },
+      {
+        name: 'Microsoft SDL',
+        level: 5,
+      },
+      {
+        name: 'Security Requirements Engineering',
+        level: 4,
+      },
+      {
+        name: 'MITRE ATT&CK',
+        level: 4,
+      },
+      {
+        name: 'ISO 27001',
+        level: 3,
+      },
+    ],
+  },
+  {
+    name: 'DevOps & Plattform',
+    skills: [
+      {
+        name: 'Kubernetes',
+        level: 8,
+      },
+      {
+        name: 'KCP / TMC',
+        level: 8,
+      },
+      {
+        name: 'Azure Container Apps',
+        level: 8,
+      },
+      {
+        name: 'sops / ksops',
+        level: 8,
+      },
+      {
+        name: 'ArgoCD / GitOps',
+        level: 7,
+      },
+      {
+        name: 'Docker / Podman',
+        level: 7,
+      },
+      {
+        name: 'GitHub Actions',
+        level: 6,
+      },
+      {
+        name: 'AWS EKS',
+        level: 6,
+      },
+      {
+        name: 'Terraform / OpenTofu',
+        level: 5,
+      },
+      {
+        name: 'Helm',
+        level: 5,
+      },
+    ],
+  },
+  {
+    name: 'AI / ML Engineering',
+    skills: [
+      {
+        name: 'Microsoft Foundry (Azure AI Foundry)',
+        level: 6,
+      },
+      {
+        name: 'Hybrid RAG',
+        level: 6,
+      },
+      {
+        name: 'Conformal Prediction',
+        level: 4,
+      },
+    ],
+  },
+  {
+    name: 'Offensive Security (CEHv13 Labs)',
+    skills: [
+      {
+        name: 'Nmap',
+        level: 5,
+      },
+      {
+        name: 'sqlmap',
+        level: 5,
+      },
+      {
+        name: 'Wireshark',
+        level: 4,
+      },
+      {
+        name: 'Nessus / OpenVAS',
+        level: 4,
+      },
+      {
+        name: 'Hashcat / John',
+        level: 4,
+      },
+      {
+        name: 'Metasploit',
+        level: 3,
+      },
+      {
+        name: 'Aircrack-ng',
+        level: 3,
+      },
+      {
+        name: 'Shodan / Recon-ng',
+        level: 3,
+      },
+    ],
+  },
+  {
+    name: 'Web-Entwicklung',
     skills: [
       {
         name: 'React',
         level: 10,
       },
-      {
-        name: 'Angular 2+',
-        level: 6,
-      },
-    ],
-  },
-  {
-    name: 'Backend development',
-    skills: [
       {
         name: 'Node.js',
         level: 9,
@@ -192,114 +346,25 @@ export const skills: SkillGroup[] = [
         level: 7,
       },
       {
+        name: 'Angular',
+        level: 6,
+      },
+      {
         name: 'Spring Boot',
         level: 6,
       },
-      {
-        name: 'Electron.js',
-        level: 5,
-      },
     ],
   },
   {
-    name: 'DevOps Praktiken',
+    name: 'Programmiersprachen',
     skills: [
       {
-        name: 'Projektkonfiguration',
-        level: 10,
-      },
-      {
-        name: 'KCP',
-        level: 8,
-      },
-      {
-        name: 'TMC',
-        level: 8,
-      },
-      {
-        name: 'Kubernetes',
-        level: 8,
-      },
-      {
-        name: 'sops / ksops',
-        level: 8,
-      },
-      {
-        name: 'ArgoCD',
-        level: 7,
-      },
-      {
-        name: 'Docker',
-        level: 7,
-      },
-      {
-        name: 'GitOps',
-        level: 7,
-      },
-      {
-        name: 'AWS EKS',
-        level: 6,
-      },
-      {
-        name: 'Podman',
-        level: 6,
-      },
-      {
-        name: 'Kustomize',
-        level: 6,
-      },
-      {
-        name: 'GitHub Actions',
-        level: 6,
-      },
-      {
-        name: 'Terraform / OpenTofu',
-        level: 5,
-      },
-      {
-        name: 'Helm',
-        level: 5,
-      },
-      {
-        name: 'OIDC (Keycloak)',
-        level: 5,
-      },
-      {
-        name: 'Prometheus',
-        level: 4,
-      },
-      {
-        name: 'Grafana',
-        level: 4,
-      },
-      {
-        name: 'Ansible',
-        level: 4,
-      },
-      {
-        name: 'Splunk',
-        level: 2,
-      },
-    ],
-  },
-  {
-    name: 'Sprachen',
-    skills: [
-      {
-        name: 'TypeScript',
+        name: 'TypeScript / JavaScript',
         level: 9,
       },
       {
-        name: 'JavaScript',
+        name: 'HTML / CSS',
         level: 9,
-      },
-      {
-        name: 'HTML5',
-        level: 9,
-      },
-      {
-        name: 'CSS',
-        level: 8,
       },
       {
         name: 'Java',
@@ -318,48 +383,41 @@ export const skills: SkillGroup[] = [
         level: 5,
       },
       {
-        name: 'MATLAB',
-        level: 5,
-      },
-      {
-        name: 'bash/zsh',
+        name: 'Bash / Zsh',
         level: 4,
-      },
-      {
-        name: 'Haskell',
-        level: 4,
-      },
-      {
-        name: 'Kotlin',
-        level: 3,
-      },
-      {
-        name: 'PHP',
-        level: 3,
       },
       {
         name: 'Python',
         level: 3,
       },
+    ],
+  },
+  {
+    name: 'Daten & Messaging',
+    skills: [
       {
-        name: 'CPLEX',
-        level: 3,
+        name: 'Redis / Valkey',
+        level: 7,
       },
       {
-        name: 'Powershell',
-        level: 3,
+        name: 'S3 / MinIO',
+        level: 7,
       },
       {
-        name: 'Prolog',
-        level: 2,
+        name: 'PostgreSQL',
+        level: 6,
       },
       {
-        name: 'Intel x86 Assembly',
-        level: 1,
+        name: 'Kafka',
+        level: 6,
       },
       {
-        name: 'R',
-        level: 1,
+        name: 'MongoDB',
+        level: 5,
+      },
+      {
+        name: 'RabbitMQ',
+        level: 5,
       },
     ],
   },
@@ -389,47 +447,6 @@ export const skills: SkillGroup[] = [
       {
         name: 'Cypress',
         level: 4,
-      },
-    ],
-  },
-  {
-    name: 'Datenbanken & Storage',
-    skills: [
-      {
-        name: 'Redis',
-        level: 7,
-      },
-      {
-        name: 'Valkey',
-        level: 7,
-      },
-      {
-        name: 'S3',
-        level: 7,
-      },
-      {
-        name: 'MinIO',
-        level: 7,
-      },
-      {
-        name: 'PostgreSQL',
-        level: 6,
-      },
-      {
-        name: 'MongoDB',
-        level: 5,
-      },
-      {
-        name: 'Hadoop',
-        level: 4,
-      },
-      {
-        name: 'Spark',
-        level: 4,
-      },
-      {
-        name: 'Elasticsearch',
-        level: 3,
       },
     ],
   },
@@ -507,7 +524,16 @@ export const portfolioItems: PortfolioItem[] = [
     Credentials (z.B. key4.db / logins.json) auf OS-Ebene.`,
     url: '',
     image: dfirImage,
-  }
+  },
+  {
+    title: 'Seminar: Indirect Prompt Injection in AI-driven SOCs',
+    description: `Literaturanalyse zu Indirect Prompt Injection (IPI) in LLM-Anwendungen mit eigener Taxonomie
+    der Angriffskette, von der Einschleusung über Drittdaten über den Eintritt in den Modellkontext bis zur Zielerfüllung
+    und Abwehr. Kritische Gegenüberstellung von Labor-Erfolgsraten und in the wild beobachteten Angriffsformen sowie
+    Übertragung der Befunde auf die LLM-gestützte Fallanalyse in aktuellen AI-driven SOC-Tools.`,
+    url: '',
+    image: ipiImage,
+  },
 ];
 
 /**
@@ -628,7 +654,12 @@ export const certifications: TimelineItem[] = [
     date: '2025 (in Arbeit)',
     location: 'ECCouncil',
     title: 'Certified Ethical Hacker (CEHv13)',
-    content: <div></div>,
+    content: (
+      <p>
+        Praktische Labs zu Netzwerk-, Web-, WLAN- und Cloud-Sicherheit: Reconnaissance, Schwachstellenanalyse,
+        Penetration Testing und Härtungsmaßnahmen.
+      </p>
+    ),
   },
 ];
 
