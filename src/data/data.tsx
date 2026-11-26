@@ -17,11 +17,11 @@ import anlagImage from '../images/portfolio/nb2_anlag.png';
 import bitoolImage from '../images/portfolio/nb2_bitool.png';
 import dfirImage from '../images/portfolio/nb2_dfir.png';
 import focusImage from '../images/portfolio/nb2_focus.png';
+import ipiImage from '../images/portfolio/nb2_ipi.png';
 import kamaeleonImage from '../images/portfolio/nb2_kamaeleon.png';
 import kcpImage from '../images/portfolio/nb2_kcp.png';
 import leitwertImage from '../images/portfolio/nb2_leitwert.png';
 import pcsecImage from '../images/portfolio/nb2_pcsec.png';
-import ipiImage from '../images/portfolio/nb2_ipi.png';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
