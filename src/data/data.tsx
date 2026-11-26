@@ -131,11 +131,11 @@ export const aboutData: About = {
     Breite durch zertifizierte Tiefe zu ergänzen.
   `,
   aboutItems: [
-    {label: 'Wohnort', text: 'Ingolstadt, Bayern', Icon: MapIcon},
+    {label: 'Wohnort', text: 'Pörnbach, Bayern', Icon: MapIcon},
     {label: 'Alter', text: Age.toString(), Icon: CalendarIcon},
     {label: 'Nationalität', text: 'Deutsch', Icon: FlagIcon},
     {label: 'Sprachen', text: 'Deutsch (C2), Englisch (C1)', Icon: LanguageIcon},
-    {label: 'Interessen', text: 'Autos, Kraftsport', Icon: SparklesIcon},
+    {label: 'Interessen', text: 'Kraftsport, Fahrzeugtechnik & Elektronikreparatur, Forstarbeit, DIY-Projekte', Icon: SparklesIcon},
     {label: 'Studium', text: 'Technische Hochschule Ingolstadt', Icon: AcademicCapIcon},
     {label: 'Firma', text: 'DATEV eG', Icon: BuildingOffice2Icon},
   ],
@@ -697,8 +697,8 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.Location,
-      text: 'Ingolstadt, Bayern',
-      href: 'https://maps.app.goo.gl/iQTSf9aRpYCrYdJYA',
+      text: 'Pörnbach, Bayern',
+      href: 'https://maps.app.goo.gl/Cesj4FXjVy6231Lf8',
     },
     {
       type: ContactType.Github,
